@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "9a2c986a-37ca-4e08-b2cd-91aca9bc7664",
+		"name": "experian",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17306682",
+		"_collection_link": "https://interstellar-star-69220.postman.co/workspace/myWorkspace~c9d71ccc-b225-4854-9946-3d0960668ffe/collection/17306682-9a2c986a-37ca-4e08-b2cd-91aca9bc7664?action=share&source=collection_link&creator=17306682"
+	},
+	"item": [
+		{
+			"name": "/add-date",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "experian",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "experian",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"date\":\"12/12/2024\",\n    \"daysToAdd\":1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/api/v1/add-days",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"v1",
+						"add-days"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
